@@ -23,6 +23,11 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 // endinjector
 
 //Custom styles
-.main .navbar {
-  display: none;
+.main {
+  .breadcrumb-header {
+    display: none;
+  }
+  .title-header {
+    display: none;
+  }
 }

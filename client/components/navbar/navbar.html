@@ -27,7 +27,7 @@
     </div>
   </div>
 </div> -->
-<header id="header">
+<header id="header" ng-show="nav.isLoggedIn()">
 			<div id="logo-group">
 
 				<!-- PLACE YOUR LOGO HERE -->
@@ -140,7 +140,7 @@
 							</li>
 							<li class="divider"></li>
 							<li>
-								<a href="login.html" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
+								<a class="padding-10 padding-top-5 padding-bottom-5" ui-sref="logout" ><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
 							</li>
 						</ul>
 					</li>
@@ -148,7 +148,7 @@
 
 				<!-- logout button -->
 				<div id="logout" class="btn-header transparent pull-right">
-					<span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+					<span> <a ui-sref="logout" title="Sign Out"><i class="fa fa-sign-out"></i></a> </span>
 				</div>
 				<!-- end logout button -->
 
@@ -240,7 +240,7 @@
 			<!-- end pulled right: nav area -->
 
 		</header>
-    <aside id="left-panel">
+    <aside id="left-panel" ng-show="nav.isLoggedIn()">
 
 			<!-- User info -->
 			<div class="login-info">
@@ -309,51 +309,3 @@
 			</span>
 
 		</aside>
-    <div id="main" role="main">
-
-    			<!-- RIBBON -->
-    			<div id="ribbon">
-
-    				<span class="ribbon-button-alignment">
-    					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
-    						<i class="fa fa-refresh"></i>
-    					</span>
-    				</span>
-
-    				<!-- breadcrumb -->
-    				<ol class="breadcrumb">
-    					<li>Home</li><li>Miscellaneous</li><li>Blank Page</li>
-    				</ol>
-    				<!-- end breadcrumb -->
-
-    			</div>
-    			<!-- END RIBBON -->
-
-
-
-    			<!-- MAIN CONTENT -->
-    			<div id="content">
-
-    				<!-- row -->
-    				<div class="row">
-
-    					<!-- col -->
-    					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-    						<h1 class="page-title txt-color-blueDark">
-
-    							<!-- PAGE HEADER -->
-    							<i class="fa-fw fa fa-home"></i>
-    								Page Header
-    							<span>&gt;
-    								Subtitle
-    							</span>
-    						</h1>
-    					</div>
-    					<!-- end col -->
-
-
-    				</div>
-    				<!-- end row -->
-
-
-    			
