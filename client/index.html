@@ -31,53 +31,9 @@
 
     <!-- Add your site or application content here -->
     <navbar></navbar>
-    <div id="main" role="main">
-
-    			<!-- RIBBON -->
-    			<div id="ribbon" class="breadcrumb-header">
-
-    				<span class="ribbon-button-alignment">
-    					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
-    						<i class="fa fa-refresh"></i>
-    					</span>
-    				</span>
-
-    				<!-- breadcrumb -->
-    				<ol class="breadcrumb">
-    					<li>Home</li><li>Miscellaneous</li><li>Blank Page</li>
-    				</ol>
-    				<!-- end breadcrumb -->
-
-    			</div>
-    			<!-- END RIBBON -->
-
-
-
-    			<!-- MAIN CONTENT -->
-    			<div id="content">
-
-    				<!-- row -->
-    				<div class="row title-header">
-
-    					<!-- col -->
-    					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-    						<h1 class="page-title txt-color-blueDark">
-
-    							<!-- PAGE HEADER -->
-    							<i class="fa-fw fa fa-home"></i>
-    								Page Header
-    							<span>&gt;
-    								Subtitle
-    							</span>
-    						</h1>
-    					</div>
-    					<!-- end col -->
-
-
-    				</div>
-    				<!-- end row -->
-    <div ui-view=""></div>
-  </div>
+    <div id="main" role="main">		
+      <div ui-view=""></div>
+    </div>
 </div>
     <!-- <footer></footer> -->
 
@@ -120,19 +76,26 @@
       <script src="app/admin/admin.module.js"></script>
       <script src="components/auth/auth.module.js"></script>
       <script src="components/util/util.module.js"></script>
-      <script src="components/auth/auth.service.js"></script>
+      <script src="app/jobs/jobs.controller.js"></script>
+      <script src="app/addcompany/addcompany.controller.js"></script>
+      <script src="app/addcompany/addcompany.js"></script>
+      <script src="app/addjob/addjob.controller.js"></script>
+      <script src="app/addjob/addjob.js"></script>
       <script src="app/admin/admin.controller.js"></script>
       <script src="app/account/account.js"></script>
       <script src="app/admin/admin.router.js"></script>
       <script src="app/app.constant.js"></script>
+      <script src="app/companies/companies.controller.js"></script>
+      <script src="app/companies/companies.js"></script>
+      <script src="app/account/login/login.controller.js"></script>
+      <script src="app/jobs/jobs.js"></script>
       <script src="app/main/main.controller.js"></script>
       <script src="app/main/main.js"></script>
       <script src="app/account/settings/settings.controller.js"></script>
-      <script src="app/account/login/login.controller.js"></script>
+      <script src="components/auth/auth.service.js"></script>
       <script src="components/auth/interceptor.service.js"></script>
       <script src="components/auth/router.decorator.js"></script>
       <script src="components/auth/user.service.js"></script>
-      <!-- script src="components/footer/footer.directive.js"></script -->
       <script src="components/modal/modal.service.js"></script>
       <script src="components/mongoose-error/mongoose-error.directive.js"></script>
       <script src="components/navbar/navbar.controller.js"></script>
