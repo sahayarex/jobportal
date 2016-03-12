@@ -13,6 +13,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/jqGrid/css/ui.jqgrid.css" />
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,client}) app/app.css -->
@@ -31,10 +32,7 @@
 
     <!-- Add your site or application content here -->
     <navbar></navbar>
-    <div id="main" role="main">		
       <div ui-view=""></div>
-    </div>
-</div>
     <!-- <footer></footer> -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -63,6 +61,13 @@
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
       <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
+      <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+      <script src="bower_components/requirejs/require.js"></script>
+      <script src="bower_components/require-css/css.js"></script>
+      <script src="bower_components/require-css/css-builder.js"></script>
+      <script src="bower_components/require-css/normalize.js"></script>
+      <script src="bower_components/jqGrid/js/i18n/grid.locale-en.js"></script>
+      <script src="bower_components/jqGrid/js/jquery.jqGrid.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js(.tmp) app/app.js -->
@@ -76,7 +81,7 @@
       <script src="app/admin/admin.module.js"></script>
       <script src="components/auth/auth.module.js"></script>
       <script src="components/util/util.module.js"></script>
-      <script src="app/jobs/jobs.controller.js"></script>
+      <script src="app/jobs/jobs.js"></script>
       <script src="app/addcompany/addcompany.controller.js"></script>
       <script src="app/addcompany/addcompany.js"></script>
       <script src="app/addjob/addjob.controller.js"></script>
@@ -87,8 +92,9 @@
       <script src="app/app.constant.js"></script>
       <script src="app/companies/companies.controller.js"></script>
       <script src="app/companies/companies.js"></script>
+      <script src="app/jobs/jobs.controller.js"></script>
       <script src="app/account/login/login.controller.js"></script>
-      <script src="app/jobs/jobs.js"></script>
+      <script src="app/jqGrid/jqGrid.directive.js"></script>
       <script src="app/main/main.controller.js"></script>
       <script src="app/main/main.js"></script>
       <script src="app/account/settings/settings.controller.js"></script>

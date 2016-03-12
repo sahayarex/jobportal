@@ -14,7 +14,7 @@ angular.module('jobportalApp')
         referrer: 'main',
         template: '',
         controller: function($state, Auth) {
-          var referrer = 'main';
+          var referrer = 'login';
           Auth.logout();
           $state.go(referrer);
         }

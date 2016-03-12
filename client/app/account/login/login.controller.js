@@ -2,7 +2,7 @@
 
 class LoginController {
   constructor(Auth, $state) {
-    this.user = {};
+    this.user = {email:'admin@example.com', password:'admin'};
     this.errors = {};
     this.submitted = false;
 
@@ -20,7 +20,7 @@ class LoginController {
       })
       .then(() => {
         // Logged in, redirect to home
-        this.$state.go('main');
+        this.$state.go('companies');
       })
       .catch(err => {
         this.errors.other = err.message;

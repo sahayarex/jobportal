@@ -26,22 +26,20 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 // endinjector
 
 //Custom styles
-.main {
-  .breadcrumb-header {
-    display: none;
-  }
-  .title-header {
-    display: none;
-  }
-  #main {
-    margin: 0px;
-  }
-  .login-box {
-    margin-top: 100px;
-  }
-  @media screen and (min-width: 750px) {
-    .login-box {
-      margin-top: 180px; 
-    }
-  }
+
+ .register
+ {
+ 	padding: 15px 10px 15px 15px;
+    margin-bottom: 25px;
+    background: rgba(248,248,248,.9);
+      border-bottom: 1px solid #ddd;
+      margin-top: 0px;
+ }
+
+ .reg-form
+ {
+ 	    border: 1px solid #ddd;
+    padding: 0px;
+    padding-bottom: 15px;
+
 }
