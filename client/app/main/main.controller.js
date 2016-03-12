@@ -42,7 +42,7 @@ class MainController {
       })
       .then(() => {
         // Logged in, redirect to home
-        this.$state.go('settings');
+        this.$state.go('companies');
       })
       .catch(err => {
         this.errors.other = err.message;
