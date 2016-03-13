@@ -1,3 +1,390 @@
-<div class="col-md-12">
-This is the addjob view.
+<div class="" id="main">
+
+<!-- RIBBON -->
+		<div id="ribbon" class="breadcrumb-header">
+
+			<span class="ribbon-button-alignment">
+				<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+					<i class="fa fa-refresh"></i>
+				</span>
+			</span>
+
+			<!-- breadcrumb -->
+			<ol class="breadcrumb">
+				<li>Home</li><li>Miscellaneous</li><li>Blank Page</li>
+			</ol>
+			<!-- end breadcrumb -->
+
+		</div>
+		<!-- END RIBBON -->
+	<!-- MAIN CONTENT -->
+	<div id="content">
+
+		<!-- row -->
+		<div class="row title-header">
+
+			<!-- col -->
+			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+				<h1 class="page-title txt-color-blueDark">
+
+					<!-- PAGE HEADER -->
+					<i class="fa-fw fa fa-home"></i>
+						Add Jobs
+					<span>&gt;
+						Subtitle
+					</span>
+				</h1>
+			</div>
+			<!-- end col -->
+
+
+		</div>
+		<!-- end row -->
+    	<!-- <div class="field-label">
+        <label class="required">Company Name</label>
+        <div class="text-wrapper">    <input type="text" name="name" id="name" value="" placeholder="" data-validators="required" style="width: 100%;" class="validation-added">
 </div>
+        </div>
+       <hr width=100% align=left>
+       <div class="field-label">
+        <label class="required">Address</label>
+        <div class="textarea-wrapper">
+    <textarea name="address[address]" id="address[address]" placeholder="Street" style="width:40%
+                    " class="validation-added"></textarea>
+</div>
+<div class="text-wrapper">    <input type="text" name="address[city]" id="address[city]" value="" placeholder="City" style="width: 40%;" class="validation-added">
+</div>
+
+
+
+    </div> -->
+    <div class="row">
+
+		<!-- NEW COL START -->
+		<article class="col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+
+			<!-- Widget ID (each widget will need unique ID)-->
+			<div role="widget" class="jarviswidget jarviswidget-sortable" id="wid-id-1" data-widget-editbutton="false" data-widget-custombutton="false">
+				<!-- widget options:
+					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+					data-widget-colorbutton="false"
+					data-widget-editbutton="false"
+					data-widget-togglebutton="false"
+					data-widget-deletebutton="false"
+					data-widget-fullscreenbutton="false"
+					data-widget-custombutton="false"
+					data-widget-collapsed="true"
+					data-widget-sortable="false"
+
+				-->
+				<header role="heading"><div role="menu" class="jarviswidget-ctrls">   <a data-original-title="Collapse" href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom"><i class="fa fa-minus "></i></a> <a data-original-title="Fullscreen" href="javascript:void(0);" class="button-icon jarviswidget-fullscreen-btn" rel="tooltip" title="" data-placement="bottom"><i class="fa fa-expand "></i></a> <a data-original-title="Delete" href="javascript:void(0);" class="button-icon jarviswidget-delete-btn" rel="tooltip" title="" data-placement="bottom"><i class="fa fa-times"></i></a></div><div role="menu" class="widget-toolbar"><a data-toggle="dropdown" class="dropdown-toggle color-box selector" href="javascript:void(0);"></a><ul class="dropdown-menu arrow-box-up-right color-select pull-right"><li><span class="bg-color-green" data-widget-setstyle="jarviswidget-color-green" rel="tooltip" data-placement="left" data-original-title="Green Grass"></span></li><li><span class="bg-color-greenDark" data-widget-setstyle="jarviswidget-color-greenDark" rel="tooltip" data-placement="top" data-original-title="Dark Green"></span></li><li><span class="bg-color-greenLight" data-widget-setstyle="jarviswidget-color-greenLight" rel="tooltip" data-placement="top" data-original-title="Light Green"></span></li><li><span class="bg-color-purple" data-widget-setstyle="jarviswidget-color-purple" rel="tooltip" data-placement="top" data-original-title="Purple"></span></li><li><span class="bg-color-magenta" data-widget-setstyle="jarviswidget-color-magenta" rel="tooltip" data-placement="top" data-original-title="Magenta"></span></li><li><span class="bg-color-pink" data-widget-setstyle="jarviswidget-color-pink" rel="tooltip" data-placement="right" data-original-title="Pink"></span></li><li><span class="bg-color-pinkDark" data-widget-setstyle="jarviswidget-color-pinkDark" rel="tooltip" data-placement="left" data-original-title="Fade Pink"></span></li><li><span class="bg-color-blueLight" data-widget-setstyle="jarviswidget-color-blueLight" rel="tooltip" data-placement="top" data-original-title="Light Blue"></span></li><li><span class="bg-color-teal" data-widget-setstyle="jarviswidget-color-teal" rel="tooltip" data-placement="top" data-original-title="Teal"></span></li><li><span class="bg-color-blue" data-widget-setstyle="jarviswidget-color-blue" rel="tooltip" data-placement="top" data-original-title="Ocean Blue"></span></li><li><span class="bg-color-blueDark" data-widget-setstyle="jarviswidget-color-blueDark" rel="tooltip" data-placement="top" data-original-title="Night Sky"></span></li><li><span class="bg-color-darken" data-widget-setstyle="jarviswidget-color-darken" rel="tooltip" data-placement="right" data-original-title="Night"></span></li><li><span class="bg-color-yellow" data-widget-setstyle="jarviswidget-color-yellow" rel="tooltip" data-placement="left" data-original-title="Day Light"></span></li><li><span class="bg-color-orange" data-widget-setstyle="jarviswidget-color-orange" rel="tooltip" data-placement="bottom" data-original-title="Orange"></span></li><li><span class="bg-color-orangeDark" data-widget-setstyle="jarviswidget-color-orangeDark" rel="tooltip" data-placement="bottom" data-original-title="Dark Orange"></span></li><li><span class="bg-color-red" data-widget-setstyle="jarviswidget-color-red" rel="tooltip" data-placement="bottom" data-original-title="Red Rose"></span></li><li><span class="bg-color-redLight" data-widget-setstyle="jarviswidget-color-redLight" rel="tooltip" data-placement="bottom" data-original-title="Light Red"></span></li><li><span class="bg-color-white" data-widget-setstyle="jarviswidget-color-white" rel="tooltip" data-placement="right" data-original-title="Purity"></span></li><li><a href="javascript:void(0);" class="jarviswidget-remove-colors" data-widget-setstyle="" rel="tooltip" data-placement="bottom" data-original-title="Reset widget color to default">Remove</a></li></ul></div>
+					<span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+					<h2>Checkout Form </h2>
+
+				<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span></header>
+
+				<!-- widget div-->
+				<div role="content">
+
+					<!-- widget edit box -->
+					<div class="jarviswidget-editbox">
+						<!-- This area used as dropdown edit box -->
+
+					</div>
+					<!-- end widget edit box -->
+
+					<!-- widget content -->
+					<div class="widget-body no-padding">
+
+						<form id="checkout-form" class="smart-form" ng-submit="submit()">
+
+							<fieldset>
+								<div class="row">
+									<section class="col col-6">
+										<label class="input"> <i class="icon-prepend fa fa-building-o"></i>
+											<input name="title" ng-model="jobs.title" placeholder="Title" type="text" required>
+										</label>
+									</section>
+								</div>
+							</fieldset>
+              <fieldset>
+
+
+								<div class="row">
+									<label class="label col col-4">Locations</label>
+						</div></fieldset>
+                               <fieldset>
+								<div class="row">
+									<section class="col col-6">
+										<label class="input">
+											<input name="lname" ng-model="jobs.lname" placeholder="city " type="text" required>
+										</label>
+									</section>
+									<section class="col col-6">
+										<label class="input">
+											<input name="lname" ng-model="company.contact_lname" placeholder="state" type="text" required>
+										</label>
+									</section>
+								</div>
+
+								<div class="row">
+									<section class="col col-6">
+										<label class="input">
+											<input name="zipcode" ng-model="jobs.zipcode" placeholder="zipcode" type="text">
+										</label>
+									</section>
+									<section class="col col-6">
+										<label class="input">
+											<input name="cjobid" ng-model="jobs.cjobid" placeholder="company job id"  type="text">
+										</label>
+									</section>
+									<section class="col col-6">
+										<label class="input">
+											<input name="maximumrate" ng-model="jobs.maximumrate" placeholder="Maximum Rate"  type="text">
+										</label>
+									</section>
+                  <section class="col col-6">
+										<label class="input">
+											<input name="salary" ng-model="jobs.salary" placeholder="Salary"  type="text">
+										</label>
+									</section>
+                  <section class="col col-6">
+										<label class="input">
+											<input name="startrate" ng-model="jobs.startrate" placeholder="Start Rate"  type="text">
+										</label>
+									</section>
+                  <section class="col col-6">
+										<label class="input">
+											<input name="duration" ng-model="jobs.duration" placeholder="Duration"  type="text">
+										</label>
+									</section>
+                  <section class="col col-6">
+										<label class="select">
+											<select name="">
+												<option value="0" selected="" disabled="">Recruiter_old</option>
+												<option value="1">Liji</option>
+												<option value="1">Bhavya</option>
+												<option value="3">Swapna</option>
+												<option value="4">Amar</option>
+											</select> <i></i> </label>
+									</section>
+                  <section class="col col-6">
+										<label class="input">
+											<input name="susername" ng-model="jobs.susername" placeholder="Source Typing users name"  type="text">
+										</label>
+									</section>
+                  <section class="col col-3">
+										<label class="input">
+											<input name="cjobid" ng-model="jobs.cjobid" placeholder="Client Job ID"  type="text">
+										</label>
+									</section>
+                  <section class="col col-8">
+                      <label class="label col col-4">Recruiter</label>
+                      <section>
+									<div class="inline-group">
+										<label class="radio">
+											<input type="radio" name="radio-inline" checked="">
+											<i></i>Liji</label>
+										<label class="radio">
+											<input type="radio" name="radio-inline">
+											<i></i>Bhavya</label>
+										<label class="radio">
+											<input type="radio" name="radio-inline">
+											<i></i>Swapna</label>
+                      <label class="radio">
+  											<input type="radio" name="radio-inline">
+  											<i></i>Amar</label>
+									</div>
+								</section>
+								</div>
+							</fieldset>
+
+                <fieldset>
+								<div class="row">
+										<section class="col col-6">
+											<div class="row">
+												<label class="label col col-4">Hot</label>
+    <input type="checkbox" name="isHot" ng-model="company.isHot" value="on" class="validation-added">
+    Yes</label></section>
+    <section class="col col-6">
+      <div class="row">
+        <label class="label col col-4">Publish</label>
+<input type="checkbox" name="isHot" ng-model="company.isHot" value="on" class="validation-added">
+Yes</label></section>
+<section class="col col-6">
+										<label class="select">
+											<select name="">
+												<option value="0" selected="" disabled="">Opening</option>
+                        <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                   </select>
+  		</select> <i></i> </label>
+									</section>
+                  <section class="col col-6">
+                  										<label class="select">
+                  											<select name="">
+                  												<option value="0" selected="" disabled="">Type</option>
+                                          <option value="C2H">C2H (Contract to Hire)</option>
+                    <option value="C">C (Contract)</option>
+                    <option value="FL">FL (FreeLance)</option>
+                                     </select>
+                    		</select> <i></i> </label>
+                  									</section>
+                                    <section class="col col-6">
+                  										<label class="input"> <i class=""></i>
+                  											<input name="website" ng-model="company.website" placeholder="Start typing Recruiter user name" type="text">
+                  										</label>
+                  									</section>
+                  									<section class="col col-6">
+                  										<label class="input"> <i class=""></i>
+                  											<input name="strownername" ng-model="jobs.strownername" placeholder="Start typing Recruiter Owner name" type="text">
+                  										</label>
+                  									</section>
+                                    <section class="col col-6">
+                                    										<label class="select">
+                                    											<select name="">
+                                    												<option value="0" selected="" disabled="">Category</option>
+                                                            <option value="none"></option>
+                    <option value="Accounting/Finance">Accounting/Finance</option>
+                    <option value="Administrative">Administrative</option>
+                    <option value="Architecture/Engineering">Architecture/Engineering</option>
+                    <option value="Art/Media/Design">Art/Media/Design</option>
+                    <option value="Banking/Loans">Banking/Loans</option>
+                    <option value="Biotech/Pharmaceutical">Biotech/Pharmaceutical</option>
+                    <option value="Computer/Software">Computer/Software</option>
+                    <option value="Construction/Facilities">Construction/Facilities</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Education">Education</option>
+                    <option value="General Labor">General Labor</option>
+                    <option value="Government/Military">Government/Military</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Hospitality/Travel">Hospitality/Travel</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Law Enforcement/Security">Law Enforcement/Security</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Marketing/Public Relations">Marketing/Public Relations</option>
+                    <option value="Real Estate">Real Estate</option>
+                    <option value="Restaurant/Food Service">Restaurant/Food Service</option>
+                    <option value="Retail">Retail</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Science/Research">Science/Research</option>
+                    <option value="Telecommunications">Telecommunications</option>
+                    <option value="Transportation/Logistics">Transportation/Logistics</option>
+                    <option value="Volunteering/Non-Profit">Volunteering/Non-Profit</option>
+                    <option value="Writing/Editing">Writing/Editing</option>
+                                                       </select>
+                                      		</select> <i></i> </label>
+                                    									</section>
+								</div>
+							</fieldset>
+              <fieldset>
+                <div class="row">
+                  <section class="col col-6">
+                    <label class="input"> <i class=""></i>
+                      <input name="stcompanyname" ng-model="jobs.stcompanyname" placeholder="Start typing Company name" type="text">
+                    </label>
+                  </section>
+                  <section class="col col-6">
+                    <label class="input"> <i class=""></i>
+                      <button type="button" class="btn btn-primary">
+  												Block level button
+  											</button>
+
+                  </section>
+                  <section class="col col-6">
+                    <label class="input"> <i class=""></i>
+                      <input name="stdepartmentname" ng-model="jobs.stdepartmentname" placeholder="Start typing Department name" type="text">
+                    </label>
+                  </section>
+                    <section class="col col-6">
+                      <label class="input"> <i class=""></i>
+                        <input name="stcontactname" ng-model="jobs.stcontactname" placeholder="Start typing Contact name" type="text">
+                      </label>
+                </div>
+              </fieldset>
+              <fieldset>
+								<div class="row">
+									<section class="col col-6">
+                    <label class="select">
+                      <select name="Status">
+                        <option value="0" selected="" disabled="">Status</option>
+                        <option value="none"></option>
+                        <option value="Active">Active</option>
+                        <option value="Full">Full</option>
+                        <option value="Onhold">Onhold</option>
+                        <option value="Upcoming">Upcoming</option>
+                   </select>
+                  </select> <i></i> </label>
+									</section>
+								</div>
+							</fieldset>
+							<fieldset>
+
+								<div class="row">
+                  <section class="col col-8">
+                      <label class="label col col-4">Application</label>
+                      <section>
+									<div class="inline-group">
+										<label class="radio">
+											<input type="radio" name="radio-inline" checked="">
+											<i></i>General Application</label>
+										<label class="radio">
+											<input type="radio" name="radio-inline">
+											<i></i> EEO-1 Compliance Questionnaire</label>
+									</div>
+								</section>
+								</div>
+							</fieldset>
+
+							<footer>
+								<button type="Add Job Order"  name="Add Job Order" class="btn btn-primary">
+									Add Job Order
+								</button>
+							</footer>
+						</form>
+
+					</div>
+					<!-- end widget content -->
+
+				</div>
+				<!-- end widget div -->
+
+			</div>
+			<!-- end widget -->
+
+			<!-- Widget ID (each widget will need unique ID)-->
+
+			<!-- end widget -->
+
+			<!-- Widget ID (each widget will need unique ID)-->
+
+			<!-- end widget -->
+
+		</article>
+		<!-- END COL -->
+
+		<!-- NEW COL START -->
+
+		<!-- END COL -->
+
+	</div>
+    </div>
+	</div>
