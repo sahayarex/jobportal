@@ -8,6 +8,7 @@ angular.module('jobportalApp', [
   'ngResource',
   'ngSanitize',
   'ui.router',
+  'smart-table',
   'ui.bootstrap',
   'validation.match'
 ])

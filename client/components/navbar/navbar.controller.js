@@ -12,7 +12,6 @@ class NavbarController {
 
   constructor(Auth) {
     this.isLoggedIn = Auth.isLoggedIn;
-    console.log("logged in", this.isLoggedIn);
     this.isAdmin = Auth.isAdmin;
     this.getCurrentUser = Auth.getCurrentUser;
   }
