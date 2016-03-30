@@ -10,7 +10,7 @@ angular.module('jobportalApp')
     //
     // $scope.displayCollection = [].concat($scope.rowCollection);
 
-    $scope.itemsByPage = 15;
+    $scope.itemsByPage = 10;
     // $scope.rowCollection = [{
     //   _id: "56e57f442dc9d71702e69d76",
     //   address_address: "14/83, Vazhavilai",
