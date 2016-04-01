@@ -98,7 +98,7 @@
      <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 col-sm-offset-2 col-md-offset-3 col-lg-offset-3 reg-form">
 
      <h2 class="register">Registration is Free</h2>
-<form class="ng-pristine ng-valid" novalidate="novalidate" data-smart-validate-form="">
+<form class="ng-pristine ng-valid"  name="form" novalidate="novalidate" data-smart-validate-form="">
 
 <div class="col-sm-12 ng-isolate-scope" data-smart-wizard="" data-smart-wizard-callback="wizard1CompleteCallback">
 <div class="form-bootstrapWizard clearfix">
@@ -130,7 +130,7 @@
             <div class="form-group">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-envelope fa-lg fa-fw"></i></span>
-                    <input class="form-control input-lg" placeholder="email@address.com" name="email" data-smart-validate-input="" data-required="" data-email="" data-message-required="We need your email address to contact you" data-message-email="Your email address must be in the format of name@domain.com" type="text">
+                    <input class="form-control input-lg" placeholder="email@address.com" ng-model="vm.user.email" name="email" data-smart-validate-input="" data-required="" data-email="" data-message-required="We need your email address to contact you" data-message-email="Your email address must be in the format of name@domain.com" type="text">
 
                 </div>
             </div>
@@ -144,7 +144,7 @@
             <div class="form-group">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-user fa-lg fa-fw"></i></span>
-                    <input class="form-control input-lg" placeholder="First Name" name="fname" data-smart-validate-input="" data-required="" data-message="Please specify your First name" type="text">
+                    <input class="form-control input-lg" placeholder="First Name" ng-model="vm.user.fname" name="fname" data-smart-validate-input="" data-required="" data-message="Please specify your First name" type="text">
 
                 </div>
             </div>
@@ -153,7 +153,7 @@
             <div class="form-group">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-user fa-lg fa-fw"></i></span>
-                    <input class="form-control input-lg" placeholder="Last Name" name="lname" data-smart-validate-input="" data-required="" data-message="Please specify your Last name" type="text">
+                    <input class="form-control input-lg" placeholder="Last Name" ng-model="vm.user.lname" name="lname" data-smart-validate-input="" data-required="" data-message="Please specify your Last name" type="text">
 
                 </div>
             </div>
@@ -164,7 +164,7 @@
             <div class="form-group">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-user fa-lg fa-fw"></i></span>
-                    <input class="form-control input-lg" placeholder="username" name="username" data-smart-validate-input="" data-required="" data-email="" data-message-required="We need your email address to contact you" data-message-email="Your email address must be in the format of name@domain.com" type="text">
+                    <input class="form-control input-lg" placeholder="username" ng-model="vm.user.username" name="username" data-smart-validate-input="" data-required="" data-email="" data-message-required="We need your email address to contact you" data-message-email="Your email address must be in the format of name@domain.com" type="text">
 
                 </div>
             </div>
@@ -177,7 +177,7 @@
             <div class="form-group">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-lock fa-lg fa-fw"></i></span>
-                    <input class="form-control input-lg" placeholder="password" name="rpassword" data-smart-validate-input="" data-required="" data-message="Please specify your password" type="password">
+                    <input class="form-control input-lg" placeholder="password" ng-model="vm.user.rpassword" name="rpassword" data-smart-validate-input="" data-required="" data-message="Please specify your password" type="password">
 
                 </div>
             </div>
@@ -186,7 +186,7 @@
             <div class="form-group">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-lock fa-lg fa-fw"></i></span>
-                    <input class="form-control input-lg" placeholder="confirm password" name="cpassword" data-smart-validate-input="" data-required="" data-message="Please confirm your password" type="password">
+                    <input class="form-control input-lg" placeholder="confirm password" ng-model="vm.user.cpassword" name="cpassword" data-smart-validate-input="" data-required="" data-message="Please confirm your password" type="password">
 
                 </div>
             </div>
@@ -204,7 +204,7 @@
 <div class="form-group">
 <div class="input-group">
 <span class="input-group-addon"><i class="fa fa-flag fa-lg fa-fw"></i></span>
-<select name="country" data-smart-validate-input="" data-required="" class="form-control input-lg">
+<select ng-model="vm.user.country" name="country" data-smart-validate-input="" data-required="" class="form-control input-lg">
 <option value="" selected="selected">Select Country</option>
 <option value="United States">United States</option>
 <option value="United Kingdom">United Kingdom</option>
@@ -455,7 +455,7 @@
     <div class="form-group">
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-map-marker fa-lg fa-fw"></i></span>
-            <select class="form-control input-lg" data-smart-validate-input="" data-required="" name="city">
+            <select class="form-control input-lg" data-smart-validate-input="" data-required="" ng-model="vm.user.city" name="city">
                 <option value="" selected="selected">Select City</option>
                 <option value="Amsterdam">Amsterdam</option>
                 <option value="Atlanta">Atlanta</option>
@@ -485,7 +485,7 @@
     <div class="form-group">
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-envelope-o fa-lg fa-fw"></i></span>
-            <input class="form-control input-lg" placeholder="Postal Code" name="postal" data-smart-validate-input="" data-required="" data-minlength="4" type="text">
+            <input class="form-control input-lg" placeholder="Postal Code" ng-model="vm.user.postal" name="postal" data-smart-validate-input="" data-required="" data-minlength="4" type="text">
         </div>
     </div>
 </div>
@@ -495,7 +495,7 @@
         <div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-phone fa-lg fa-fw"></i></span>
-                <input class="form-control input-lg" data-mask-placeholder="X" placeholder="+1" name="wphone" data-smart-validate-input="" data-required="" data-minlength="10" type="text">
+                <input class="form-control input-lg" data-mask-placeholder="X" placeholder="+1" ng-model="vm.user.wphone" name="wphone" data-smart-validate-input="" data-required="" data-minlength="10" type="text">
             </div>
         </div>
     </div>
@@ -523,7 +523,7 @@
     </div>
     <div class="form-group">
         <label>This is a label</label>
-        <input class="form-control input-lg" placeholder="Another input box here..." name="etc" id="etc" type="text">
+        <input class="form-control input-lg" placeholder="Another input box here..." ng-model="vm.user.etc" name="etc" id="etc" type="text">
     </div>
 </div>
 <div class="tab-pane" data-smart-wizard-pane="4">
@@ -546,7 +546,7 @@
                     <a href="#" class="btn btn-lg btn-default"> Previous </a>
                 </li>
                 <li class="next" data-smart-wizard-next="">
-                    <a href="#" class="btn btn-lg txt-color-darken"> Next </a>
+                    <a href="#" class="btn btn-lg txt-color-darken" ng-click="vm.register(form)"> Next </a>
                 </li>
             </ul>
         </div>

@@ -10,6 +10,20 @@ class SignupController {
   constructor(Auth, $state) {
     this.Auth = Auth;
     this.$state = $state;
+    this.user = {
+      email: "testuser@gmail.com",
+      city: "testcity",
+      rpassword: "secret",
+      cpassword: "secret",
+      username: "testuser",
+      fname: "test",
+      lname: "user",
+      country: "United States",
+      postal: "654343",
+      wphone: "7484393833",
+      hphone: "8774288283",
+      etc: "test"
+    }
   }
 
   register(form) {
